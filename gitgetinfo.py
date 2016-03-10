@@ -18,11 +18,11 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, 
                                  epilog='org, user and branch are all appended arguments, e.g.: \n' \
                                  'gitgetinfo.py -s basic -b master -b featurebranch1 -b featurebranch2' \
                                  ' -u bobsmith -u mikepeters -o org1 -o org2')
-parser.add_argument("-s, --search", action="store", help="layer or interface name (or substring)", dest="search")
+parser.add_argument("-s, --search", required=True, action="store", help="layer or interface name (or substring)", dest="search")
 parser.add_argument("-b, --branch", action="append", help="specify additional branch names (default is master)", dest="branch")
 parser.add_argument("-o, --org", action="append", help="specify additional github org names to scan", dest="org")
 parser.add_argument("-u, --user", action="append", help="specify additional github user repos to scan", dest="user")
-parser.add_argument("-f, --filename", action="append", help="filename to scan in repo for search string", dest="filename")
+parser.add_argument("-f, --filename", required=True, action="append", help="filename to scan in repo for search string", dest="filename")
 args = parser.parse_args()
 
 if args.filename:

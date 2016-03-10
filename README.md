@@ -34,8 +34,8 @@ For user repo queries:
 	
 	org, user and branch are all appended arguments, e.g.: 
 	
-	gitgetinfo.py -s basic -b master -b featurebranch1 -b featurebranch2 -u bobsmith -u mikepeters -o org1 -o org2
+	gitgetinfo.py -s basic -b master -b featurebranch1 -b featurebranch2 -u bobsmith -u mikepeters -o org1 -o org2 -f layer.yaml
 	
 	or a simpler example:
 	
-	gitgetinfo.py -s hadoop-client -b ha -b master -o org1 -u johndoe 
+	gitgetinfo.py -s hadoop-client -b ha -b master -o org1 -u johndoe -f layer.yaml
