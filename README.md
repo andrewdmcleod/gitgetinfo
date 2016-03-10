@@ -12,8 +12,8 @@ BeautifulSoup
 The org query just does an http get - so the following limits do not apply.
  
 For user repo queries:
-	- api.github.com allows 1 request per minute for non-authenticated users
-	- only returns first 100 repos
+	* api.github.com allows 1 request per minute for non-authenticated users
+	* only returns first 100 repos
 
 ## Usage
 
